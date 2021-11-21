@@ -1,0 +1,11 @@
+
+    {{- $js:= (resources.Get "js/client.js") -}}
+    <div id="utter-container"></div>
+    <script
+        src="{{ $js.RelPermalink }}"
+        repo= 'desiyonan/zone'
+        issue-term= "title"
+        theme= 'github-light'
+        crossorigin= "anonymous"
+        async>
+    </script>
